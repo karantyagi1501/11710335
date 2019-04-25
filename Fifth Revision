@@ -1,0 +1,15 @@
+	time = time + proces_queue[large].btime;
+  	proces_queue[large].ct = time;
+        proces_queue[large].wtime = proces_queue[large].ct - proces_queue[large].atime - proces_queue[large].btime;
+     	proces_queue[large].ttime = proces_queue[large].ct - proces_queue[large].atime;
+    	proces_queue[large].status = 1;
+    	wtime = wtime + proces_queue[large].wtime;
+	ttime = ttime + proces_queue[large].ttime;
+        printf("\n%c\t\t%d\t\t%d\t\t%d\t\t%d", proces_queue[large].proces_name, proces_queue[large].atime, proces_queue[large].btime,          proces_queue[large].priority, proces_queue[large].wtime);
+}
+	average_wtime = wtime / limit;
+	average_ttime = ttime / limit;
+	printf("\n\nAverage waiting time:\t%f\n", average_wtime);
+        printf("Average Turnaround Time:\t%f\n", average_ttime);
+}
+}
