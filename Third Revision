@@ -1,0 +1,15 @@
+proces_queue[1].status = 0;
+	proces_queue[2].status = 0;
+	proces_queue[3].status = 0;
+	proces_queue[4].status = 0;
+	
+	proces_queue[2].btime=2;
+	btime = btime + proces_queue[2].btime;
+	
+	proces_queue[3].atime=3;
+	proces_queue[3].btime=3;
+	btime = btime + proces_queue[3].btime;
+	
+	proces_queue[4].atime=4;
+	proces_queue[4].btime=2;
+	btime = btime + proces_queue[4].btime;
