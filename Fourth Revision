@@ -1,0 +1,17 @@
+printf("enter the priorities\n");
+	for(i=1;i<=limit;i++)
+	{
+		scanf("%d",&proces_queue[i].priority);
+	}
+	ATime_Sorting();
+	proces_queue[9].priority = -9999;
+	printf("\nProcess Name\tArrival Time\tBurst Time\tPriority\tWaiting Time");
+  	for(time = proces_queue[1].atime; time < btime;)
+  	{
+    	large = 9;
+    	for(i = 1; i <= limit; i++)
+    	{
+      	if(proces_queue[i].atime <= time && proces_queue[i].status != 1 && proces_queue[i].priority >proces_queue[large].priority)
+        {
+	large = i;
+  }
