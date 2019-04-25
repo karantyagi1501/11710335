@@ -1,0 +1,16 @@
+int main()
+{
+int i, time = 0, btime = 0, large;
+char c;
+float wtime = 0, ttime = 0, average_wtime, average_ttime;
+//printf("\nEnter Total Number of Processes:\t");
+ //scanf("%d", &limit);
+ limit=4;
+ proces_queue[1].atime=4;
+ proces_queue[1].btime=2;
+ btime =btime + proces_queue[1].btime;
+ proces_queue[1].proces_name='A';
+ proces_queue[2].proces_name='B';
+ proces_queue[3].proces_name='C';
+ proces_queue[4].proces_name='D';
+ proces_queue[2].atime=2;
