@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<unistd.h>
+#include<sys/types.h>
+#include<stdlib.h>
+struct process
+{
+char proces_name;
+int atime, btime, ct, wtime, ttime, priority;
+int status;
+}
+proces_queue[10];
+
+int limit;
+
+void ATime_Sorting()
+{
+struct process temp;
+int i, j;
+for(i = 0; i < limit - 1; i++)
+{
+for(j = i + 1; j < limit; j++)
+{
+if(proces_queue[i].atime > proces_queue[j].atime)
+{
+temp = proces_queue[i];
+proces_queue[i] = proces_queue[j];
+proces_queue[j] = temp;
+}
+}
+}
+}
